@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router";
 import Layout from "./layouts/Layout"
 import App from "./App"
+import Countries, { countryLoader } from "./pages/Countries";
 
 const router = createBrowserRouter([
     {
@@ -8,6 +9,7 @@ const router = createBrowserRouter([
         Component: Layout,
         children: [
             { index: true, Component: App },
+            { path: "arts", Component: Countries, loader: countryLoader },
         ]
     }
 ])

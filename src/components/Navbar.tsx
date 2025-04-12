@@ -7,7 +7,7 @@ export default function Navbar(){
                 <div className="flex flex-col md:flex-row items-center">
                     <NavLink to="/" className="flex items-center mb-5 md:mb-0">
                         <span className="text-xl font-black text-gray-900 select-none">
-                        REST<span className="text-green-600">Explora</span>
+                        <span className="text-lime-600">Art</span>ifice
                         </span>
                     </NavLink>
                     <nav className="flex flex-wrap items-center ml-0 md:ml-8 md:border-l md:pl-8 border-slate-500">
@@ -15,27 +15,27 @@ export default function Navbar(){
                             to="/"
                             end
                             className={({ isActive }) =>
-                                `mr-5 font-medium hover:text-gray-900 ${isActive ? "text-green-600 font-bold" : "text-gray-600"}`
+                                `mr-5 font-medium hover:text-gray-900 ${isActive ? "text-lime-600 font-bold" : "text-gray-600"}`
                             }
                         >
                         Home
                         </NavLink>
                         <NavLink
-                            to="/countries"
+                            to="/arts"
                             className={({ isActive }) =>
-                                `mr-5 font-medium hover:text-gray-900 ${isActive ? "text-green-600 font-bold" : "text-gray-600"}`
+                                `mr-5 font-medium hover:text-gray-900 ${isActive ? "text-lime-600 font-bold" : "text-gray-600"}`
                             }
                         >
                         Countries
                         </NavLink>
-                        <NavLink
+                        {/* <NavLink
                             to="/about"
                             className={({ isActive }) =>
                                 `mr-5 font-medium hover:text-gray-900 ${isActive ? "text-green-600 font-bold" : "text-gray-600"}`
                             }
                         >
                         About
-                        </NavLink>
+                        </NavLink> */}
                     </nav>
                 </div>
             </div>
