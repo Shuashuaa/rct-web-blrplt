@@ -13,7 +13,7 @@ export default function Countries(){
     return (
         <>
             artifice!
-            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-6">
+            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-6 text-red-300">
                 {
                     loadedData.map((country) => (
                         <div className="border border-slate-400">
